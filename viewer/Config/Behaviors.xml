@@ -1,0 +1,32 @@
+﻿<Behaviors xmlns:esri="http://schemas.esri.com/arcgis/mapping/2009" xmlns:Esri_ArcGIS_Client_Application_AddIns="clr-namespace:Esri.ArcGIS.Client.Application.AddIns;assembly=Esri.ArcGIS.Client.Application.AddIns.ExtentQueryStringBehavior">
+  <Behavior IsEnabled="True" Title="Initialize Extent from Query String">
+    <Behavior.Class>
+      <Esri_ArcGIS_Client_Application_AddIns:GetExtentFromQueryStringBehavior />
+    </Behavior.Class>
+  </Behavior>
+  <Behavior IsEnabled="True" Title="Initialize Center from Query String">
+    <Behavior.Class>
+      <GetCenterFromQueryStringBehavior xmlns="clr-namespace:Esri.ArcGIS.Client.Application.AddIns;assembly=Esri.ArcGIS.Client.Application.AddIns.CenterQueryStringBehavior" />
+    </Behavior.Class>
+  </Behavior>
+  <Behavior IsEnabled="True" Title="Load Web Map from Query String">
+    <Behavior.Class>
+      <GetWebMapFromQueryStringBehavior xmlns="clr-namespace:Esri.ArcGIS.Client.Application.AddIns;assembly=Esri.ArcGIS.Client.Application.AddIns.WebMapQueryStringBehavior" />
+    </Behavior.Class>
+  </Behavior>
+  <Behavior IsEnabled="True" Title="Initialize Scale from Query String">
+    <Behavior.Class>
+      <GetScaleFromQueryStringBehavior xmlns="clr-namespace:Esri.ArcGIS.Client.Application.AddIns;assembly=Esri.ArcGIS.Client.Application.AddIns.ScaleQueryStringBehavior" />
+    </Behavior.Class>
+  </Behavior>
+  <Behavior IsEnabled="True" Title="Initialize Scale Level from Query String">
+    <Behavior.Class>
+      <GetScaleLevelFromQueryStringBehavior xmlns="clr-namespace:Esri.ArcGIS.Client.Application.AddIns;assembly=Esri.ArcGIS.Client.Application.AddIns.ScaleLevelQueryStringBehavior" />
+    </Behavior.Class>
+  </Behavior>
+  <Behavior IsEnabled="True" Title="Identify">
+    <Behavior.Class>
+      <esri:IdentifyBehavior />
+    </Behavior.Class>
+  </Behavior>
+</Behaviors>

@@ -1,0 +1,324 @@
+﻿<esri:Map
+	 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	 xmlns:sys="clr-namespace:System;assembly=mscorlib"
+	 xmlns:esri="http://schemas.esri.com/arcgis/client/2009"
+	 xmlns:esriBing="clr-namespace:ESRI.ArcGIS.Client.Bing;assembly=ESRI.ArcGIS.Client.Bing"
+	 xmlns:esriMapping="http://schemas.esri.com/arcgis/mapping/2009"
+	 xmlns:esriExtensibility="http://schemas.esri.com/arcgis/client/extensibility/2010"
+	 xmlns:esriFSSymbols="clr-namespace:ESRI.ArcGIS.Client.FeatureService.Symbols;assembly=ESRI.ArcGIS.Client"
+	 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<esriMapping:ScaleBarExtensions.ScaleBarMapUnit>Meters</esriMapping:ScaleBarExtensions.ScaleBarMapUnit>
+	<esri:Map.IsLogoVisible>False</esri:Map.IsLogoVisible>
+	<esri:Map.Extent>
+		<esri:Envelope XMin="703223.524784483" XMax="6820656.3825431" YMin="-941262.198275862" YMax="1085372">
+			<esri:Envelope.SpatialReference>
+				<esri:SpatialReference WKID="102100" />
+			</esri:Envelope.SpatialReference>
+		</esri:Envelope>
+	</esri:Map.Extent>
+	<esri:ArcGISTiledMapServiceLayer ID="Topographic" Url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer" MinimumResolution="0">
+		<esriExtensibility:Document.IsBaseMap>true</esriExtensibility:Document.IsBaseMap>
+		<esriMapping:LayerExtensions.LayerName>Streets</esriMapping:LayerExtensions.LayerName>
+		<esriMapping:LayerExtensions.LayerInfos />
+		<esriExtensibility:LayerProperties.IsPopupEnabled>true</esriExtensibility:LayerProperties.IsPopupEnabled>
+		<esriExtensibility:LayerProperties.IsVisibleInMapContents>true</esriExtensibility:LayerProperties.IsVisibleInMapContents>
+	</esri:ArcGISTiledMapServiceLayer>
+	<esri:FeatureLayer ID="4eb559b2a4ac41b6bf97263b8b8cc178" Visible="False" RendererTakesPrecedence="True" Url="http://maps.rcmrd.org/arcgis/rest/services/AfricaContinent/Biodiversity_Species_Kenya_Museum/MapServer/0" Mode="OnDemand" OutFields="*">
+		<esriMapping:LayerExtensions.LayerName>Africa.DBO.Africa</esriMapping:LayerExtensions.LayerName>
+		<esriMapping:LayerExtensions.DisplayUrl>http://maps.rcmrd.org/arcgis/rest/services/AfricaContinent/Biodiversity_Species_Kenya_Museum/MapServer/0</esriMapping:LayerExtensions.DisplayUrl>
+		<esriMapping:LayerExtensions.LayerInfos />
+		<esriExtensibility:LayerProperties.IsPopupEnabled>true</esriExtensibility:LayerProperties.IsPopupEnabled>
+		<esriExtensibility:LayerProperties.IsVisibleInMapContents>true</esriExtensibility:LayerProperties.IsVisibleInMapContents>
+		<esriMapping:LayerExtensions.GeometryType>Polygon</esriMapping:LayerExtensions.GeometryType>
+		<esriMapping:LayerExtensions.GradientBrush>
+			<LinearGradientBrush>
+				<GradientStop Color="#FF090991" Offset="0" />
+				<GradientStop Color="#FFB6EDF0" Offset="1" />
+			</LinearGradientBrush>
+		</esriMapping:LayerExtensions.GradientBrush>
+		<esriMapping:LayerExtensions.Fields>
+			<esriMapping:FieldInfo Name="Country" DisplayName="Country" AliasOnServer="Country" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Shape.STArea()" DisplayName="Shape.STArea()" FieldType="DecimalNumber" AliasOnServer="Shape.STArea()" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Shape.STLength()" DisplayName="Shape.STLength()" FieldType="DecimalNumber" AliasOnServer="Shape.STLength()" DomainSubtypeLookup="None" />
+		</esriMapping:LayerExtensions.Fields>
+		<esriMapping:LayerExtensions.DisplayField>Country</esriMapping:LayerExtensions.DisplayField>
+		<esriMapping:LayerExtensions.PopUpsOnClick>True</esriMapping:LayerExtensions.PopUpsOnClick>
+		<esri:GraphicsLayer.Renderer>
+			<esri:SimpleRenderer>
+				<esri:SimpleRenderer.Symbol>
+					<esriFSSymbols:SimpleFillSymbol>
+						<esriMapping:SymbolExtensions.Json>{"type":"esriSFS","style":"esriSFSSolid","color":[0,0,0,0],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[0,0,0,255],"width":0.40000000000000008}}</esriMapping:SymbolExtensions.Json>
+					</esriFSSymbols:SimpleFillSymbol>
+				</esri:SimpleRenderer.Symbol>
+			</esri:SimpleRenderer>
+		</esri:GraphicsLayer.Renderer>
+	</esri:FeatureLayer>
+	<esri:FeatureLayer ID="8a545ba9cd5f441b82b9cdf437b8b411" Visible="False" RendererTakesPrecedence="True" Url="http://maps.rcmrd.org/arcgis/rest/services/AfricaContinent/Biodiversity_Species_Kenya_Museum/MapServer/1" Mode="OnDemand" OutFields="*">
+		<esriMapping:LayerExtensions.LayerName>Africa.DBO.Birds</esriMapping:LayerExtensions.LayerName>
+		<esriMapping:LayerExtensions.DisplayUrl>http://maps.rcmrd.org/arcgis/rest/services/AfricaContinent/Biodiversity_Species_Kenya_Museum/MapServer/1</esriMapping:LayerExtensions.DisplayUrl>
+		<esriMapping:LayerExtensions.LayerInfos />
+		<esriExtensibility:LayerProperties.IsPopupEnabled>true</esriExtensibility:LayerProperties.IsPopupEnabled>
+		<esriExtensibility:LayerProperties.IsVisibleInMapContents>true</esriExtensibility:LayerProperties.IsVisibleInMapContents>
+		<esriMapping:LayerExtensions.GeometryType>Point</esriMapping:LayerExtensions.GeometryType>
+		<esriMapping:LayerExtensions.GradientBrush>
+			<LinearGradientBrush>
+				<GradientStop Color="#FF090991" Offset="0" />
+				<GradientStop Color="#FFB6EDF0" Offset="1" />
+			</LinearGradientBrush>
+		</esriMapping:LayerExtensions.GradientBrush>
+		<esriMapping:LayerExtensions.Fields>
+			<esriMapping:FieldInfo Name="CommonName" DisplayName="CommonName" AliasOnServer="CommonName" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="FullTaxonN" DisplayName="FullTaxonN" AliasOnServer="FullTaxonN" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="CollectorN" DisplayName="CollectorN" AliasOnServer="CollectorN" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Collection" DisplayName="Collection" AliasOnServer="Collection" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Locality" DisplayName="Locality" AliasOnServer="Locality" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Lat" DisplayName="Lat" FieldType="DecimalNumber" AliasOnServer="Lat" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Long" DisplayName="Long" FieldType="DecimalNumber" AliasOnServer="Long" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Elevation" DisplayName="Elevation" FieldType="DecimalNumber" AliasOnServer="Elevation" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="ElevationU" DisplayName="ElevationU" AliasOnServer="ElevationU" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Collector" DisplayName="Collector" AliasOnServer="Collector" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Type" DisplayName="Type" AliasOnServer="Type" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Country" DisplayName="Country" AliasOnServer="Country" DomainSubtypeLookup="None" />
+		</esriMapping:LayerExtensions.Fields>
+		<esriMapping:LayerExtensions.DisplayField>CommonName</esriMapping:LayerExtensions.DisplayField>
+		<esriMapping:LayerExtensions.PopUpsOnClick>True</esriMapping:LayerExtensions.PopUpsOnClick>
+		<esri:GraphicsLayer.Clusterer>
+			<esri:FlareClusterer FlareBackground="#FFDFBFDF" FlareForeground="#FF7D3432">
+				<esri:FlareClusterer.Gradient>
+					<LinearGradientBrush>
+						<GradientStop Color="#7FFFFF00" Offset="0" />
+						<GradientStop Color="#7FFF0000" Offset="1" />
+					</LinearGradientBrush>
+				</esri:FlareClusterer.Gradient>
+			</esri:FlareClusterer>
+		</esri:GraphicsLayer.Clusterer>
+		<esri:GraphicsLayer.Renderer>
+			<esri:SimpleRenderer>
+				<esri:SimpleRenderer.Symbol>
+					<esriMapping:ImageFillSymbol Size="24" OriginX="0.5" OriginY="0.5" ImageData="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABKRJREFUSIm9lmtsFFUYhp9zZvbeC9ja1i1lawsWkBIIJUgkkAoipAUJUNIAilyEGJUEEoT6A+IfCSZSLokmhkTBEjQgWFAaRBARUwy0RCpixQqlJWW1pe32sreZOf7YuqSu8Et8k5PMmXzzPvO932RydB6y9P8VMGf7uvJMz5BVSqkclHBZStlQSjNRuoWSKKSpLFu/EbE7NT3skLagkCJqkzKEEJ2gOrpDweu9UfPtUxU7WgcB5mxfV24pcdC0FHMLp5Cb6SXJnYQuNUzLJGoYhCJhQtEwylK4HU63pkm3UgrTUvSF+nPb7v7JsYYLMx5xJU0CJg0CDE/NeC3dlUxF2Wo8Lvd9W7Ysi4vXfuRS01V6gkE0KfnZ38yuFRvxuNykpw4VZ65eTE+ISFnWiEVTZj7QPBgOUXX6GAXeXMqnl5DiSeKzcycpyh+D2+kCIC9rGKcafjATAEl2Z6/H6cq8n3mgr4ed1VUsf2Yevqxs+kNBPvrqCONyCygaVRiv0zQdw7JsCQBdyt6u3kA8huO1Z2ht91PoG4ldt3G8/hyrZszHl5VNJBplw74dbCxZRv4w36AX0aQkapn2BAAIETVindU3/oRd11lSXEqz/za9wX42LVxJiicZgIbff2Fq3tgE81gHGqZpORIAFsquaxIAwzS50txEqjuZyWPGo2la3CBqGByuPcXaWWX/GqUUgpAZSYwoapkelyM2qKfGTmDiqLHsrj6Aw25nYsG9jDt7urHrdi43XSPXm5MIkBoRw7wX/d8XESPq8Tid8cLrLTeRCMbljx5kkDE0jc1lq6k8up/J7X686YO/C01KQqaRCAhEQi6nIwaoa2zgRP15Ni5ciU2PlTS3tVJ19gs2L34Zl8PJq6XlvHPkQxy6nfG+kRTk5DEi24cQAsMyZAKgNxxy2LTY9su686yf/yJOu4Pu3gBf19Vy3X+Ljv4AFft3kpmSRl6Gl3WlSxmanELjrRucrP+eu4EuRg3Px1KWGAzYtk0PmXekGrgpBCS7PQBUfv4xC6bMYMG0WQghUEoR6O2huvY07534hC1LXqEwv4BAXw8CgRAChGYNAqx2NmktYQ9KKZRS2GSM2xfs505fF08+/kTsQUAIQWpyCsuenc/hszXUXPiWmUVPc/bqJV4onguAS+qDAXvX7w2XbF+vhBCiPxTEPTCL8w2XWDypGE3GI41LCsGi6bN5//hBlu3ZwqIJ08jJ9NLVE8Cmx8O4N4MhDk8gHAmnSiHw2B3477Zz9PJ3VC7fkGAeh0jJ2tJy5rUXk53xWCxCFBHTShyyTWpXbrS1TvVlekUgGOTd6n28+fxLuAZ+YveTrmnkZHrj+3AkglPTjQSAvy9QdaD25IStZWuS6m7/xhslSxmelf1A839KKcXFXxtU1DI7EwA1aeZHz3V2rHjr0Ae+2aOLxM22Vldbh19oUtOUUpoQ0gZohmkYhmlYYcMwooYRjRgR01IWpmmZjX/cklf8LWkgdyUAWLM7krKnYkZLd/umqvpvZkvFo5bABtgHlgQ0wADCQBDoAgIglYUVlkreiAr56ZnNlTWJAODQ69v6ga0D6z/RQz9V/AUBrN80jiFEcwAAAABJRU5ErkJggg==" />
+				</esri:SimpleRenderer.Symbol>
+			</esri:SimpleRenderer>
+		</esri:GraphicsLayer.Renderer>
+	</esri:FeatureLayer>
+	<esri:FeatureLayer ID="1f9071c2befc491a9ca3cd12b00e846c" Visible="False" RendererTakesPrecedence="True" Url="http://maps.rcmrd.org/arcgis/rest/services/AfricaContinent/Biodiversity_Species_Kenya_Museum/MapServer/4" Mode="OnDemand" OutFields="*">
+		<esriMapping:LayerExtensions.LayerName>Africa.DBO.Plants</esriMapping:LayerExtensions.LayerName>
+		<esriMapping:LayerExtensions.DisplayUrl>http://maps.rcmrd.org/arcgis/rest/services/AfricaContinent/Biodiversity_Species_Kenya_Museum/MapServer/4</esriMapping:LayerExtensions.DisplayUrl>
+		<esriMapping:LayerExtensions.LayerInfos />
+		<esriExtensibility:LayerProperties.IsPopupEnabled>true</esriExtensibility:LayerProperties.IsPopupEnabled>
+		<esriExtensibility:LayerProperties.IsVisibleInMapContents>true</esriExtensibility:LayerProperties.IsVisibleInMapContents>
+		<esriMapping:LayerExtensions.GeometryType>Point</esriMapping:LayerExtensions.GeometryType>
+		<esriMapping:LayerExtensions.GradientBrush>
+			<LinearGradientBrush>
+				<GradientStop Color="#FF090991" Offset="0" />
+				<GradientStop Color="#FFB6EDF0" Offset="1" />
+			</LinearGradientBrush>
+		</esriMapping:LayerExtensions.GradientBrush>
+		<esriMapping:LayerExtensions.Fields>
+			<esriMapping:FieldInfo Name="COUNTRY" DisplayName="COUNTRY" AliasOnServer="COUNTRY" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="MAJORAREA" DisplayName="MAJORAREA" AliasOnServer="MAJORAREA" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="GAZETTEER" DisplayName="GAZETTEER" AliasOnServer="GAZETTEER" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="LAT" DisplayName="LAT" FieldType="DecimalNumber" AliasOnServer="LAT" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="LONG" DisplayName="LONG" FieldType="DecimalNumber" AliasOnServer="LONG" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Collector" DisplayName="Collector" AliasOnServer="Collector" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Locality" DisplayName="Locality" AliasOnServer="Locality" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="FullTaxonN" DisplayName="FullTaxonN" AliasOnServer="FullTaxonN" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Type" DisplayName="Type" AliasOnServer="Type" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="CommonName" DisplayName="CommonName" AliasOnServer="CommonName" DomainSubtypeLookup="None" />
+		</esriMapping:LayerExtensions.Fields>
+		<esriMapping:LayerExtensions.DisplayField>CommonName</esriMapping:LayerExtensions.DisplayField>
+		<esriMapping:LayerExtensions.PopUpsOnClick>True</esriMapping:LayerExtensions.PopUpsOnClick>
+		<esri:GraphicsLayer.Clusterer>
+			<esri:FlareClusterer FlareBackground="#FF00B050">
+				<esri:FlareClusterer.Gradient>
+					<LinearGradientBrush>
+						<GradientStop Color="#7FFFFF00" Offset="0" />
+						<GradientStop Color="#7FFF0000" Offset="1" />
+					</LinearGradientBrush>
+				</esri:FlareClusterer.Gradient>
+			</esri:FlareClusterer>
+		</esri:GraphicsLayer.Clusterer>
+		<esri:GraphicsLayer.Renderer>
+			<esri:SimpleRenderer>
+				<esri:SimpleRenderer.Symbol>
+					<esriMapping:ImageFillSymbol Size="24" OriginX="0.5" OriginY="0.5" ImageData="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABS9JREFUSIm1lmlQ1VUYh59zuRfwXhYBGRQR01zQzAUMXEqBRE1wGzIXRB01DXfT3GAqLU1RwYkxbELHRh03MDUNSRFQU1LAUVxwBCOUWC6rAcK9l//pi5BXkmycfp/eOe97fs8575k556j5n6V+mSIppQboA7g/nVMK3BRCVL8SQErZv/ZJ7ccFRQWv5T26r3qoL1ArimJ0dXKr6dWlV4PBaKjUqDUnhBDH/xNAStmmuqY69sqNXwavP7aqR17dZbO8T7tJ1KfUcavqXF3U+AQHg9EQrFFrwoUQBf8KkFI66itLf446vKVffF6UWX7V0Fj8PN+lm3t3kq6cQSUWa/XV+vHBGwMfHVgZHy2l3CiEyHohQEqpKSkvPhe+d9WAtOJ9ZuAvRuxnzNAgGowGUq4lU/G4jE/PheLpOJ4HdZlufl962KdE5KiklMuEEL//I6C4vDj2+8Td/ZrM1w2PY1PaXEa7z8fXy597+few1dlyOz+bemM9AFkVJwBoULAN2fb+wITw05uAkBYAg8HgnJN/Z2LcjQgVQEjvcCzVlgB8MHQq83ZOZ0toDGF7phE+NpKwoyOf7y53a866pWact5NSBgkhTpkBCksLNx25cMgRwErlyCjP95ix/21GdZpHUXkRd2vOc+ziEfSGApIyT7Uwb9LyH6b5Xx9YXA6YA4yNRt9DOZsBmD1gNYkZpwHw7jaYs9lnANh7az07xp3Ep89gfovN40bl6RaABqVCW1pe4iyl1Aoh6poBdU9qnJvi19t3JzxxLgAubV24WHwIgIldl6JRW5KZk4GdZVsAfDvMxLurD3cLb/Nj/k4Ach/lWnZ0cfMAsv4+A6PRpik2NRppUCoAaFQUGmUDAKO9gliRMAP/zsFoVBrOLc/Hwd4BS7WG5KvJDOjyFhtSZlFSUWQDOJu1CBDNgVC1GO3nEEhZdRk1ShHWGmtWTY4g/48HqC0sOJi8H2+PQSw7ORYACwsLNWA0A6g16npAC2ChUuHtFMzV8oRmzmTvUOKvHaSXjT9+/UYSc2w7vn0DyMzJ4HZhNpfyUrFRdaBGKcLVyU0BHpoBrDRWZU6abu7lxlzS711i5JuBXE1NwGQyAqCztiGr4gSRY+L55mw02VWJONq242bBdUrrCrlfe7F5MW4unYxArhlAX6VPmuOz8sPISx8RnxtNnNd5AKprq/F2Cqbe8AQnTTdstXZkVyWyYlAMMwNngxD0jdA2m79hNwp7W/u7QghpBvjuUtzqtYFrZllddtQ0KBVU/lnB8Pah3Hl4g2E9/JBSYabXErJyM5jWax3+XgHMjJrCjrm7eFbrJnx+305nt7m59U3BgaUHKkM8p8ZtHbcvbMnxQKKSP2PDhK9ZdHQS2/seQF9ZQlfX7kSf+YJtobsI2x1CQX0m6bdmNJtP9Vhj6u7eM0kIkdcCADDmnaCF6Tcv+4UPj/PYmDaXtOwUNoz6Ftd2rri2c0VrrWPr9FgKSx9RbSoDYHXiJAACOs4hbNziqw72Dsuf9Xz+upaDEoZ4pgdfzoqZeNqjrEpPgM9IKh9XYTQZaFQasbZqQ/+eAzjVI52E1MPs+HUZC7wi5STfKekdnF0DhBCm1gCwnieD1g/pferCiZihfYfNT7pyRh2bFklBfaZZmY2qA2tHRHFywe0qrbVut1v7Tp80HWzrgKc7CRo2fpHvV74Ra4ev2bhjxp5Ak2JybjQ1WksppVqtrtFa60oUqfzU2aVzhE6nq32BT+tvcura1KpUUhcCC1ura00v9at4Ff0FyaYX1P8kTZEAAAAASUVORK5CYII=" />
+				</esri:SimpleRenderer.Symbol>
+			</esri:SimpleRenderer>
+		</esri:GraphicsLayer.Renderer>
+	</esri:FeatureLayer>
+	<esri:FeatureLayer ID="f1edb8561d0a4f2fb397edb342eff2cf" RendererTakesPrecedence="True" Url="http://maps.rcmrd.org/arcgis/rest/services/AfricaContinent/Biodiversity_Species_Kenya_Museum/MapServer/3" Mode="OnDemand" OutFields="*">
+		<esriMapping:LayerExtensions.LayerName>Africa.DBO.Amphibians</esriMapping:LayerExtensions.LayerName>
+		<esriMapping:LayerExtensions.DisplayUrl>http://maps.rcmrd.org/arcgis/rest/services/AfricaContinent/Biodiversity_Species_Kenya_Museum/MapServer/3</esriMapping:LayerExtensions.DisplayUrl>
+		<esriMapping:LayerExtensions.LayerInfos />
+		<esriExtensibility:LayerProperties.IsPopupEnabled>true</esriExtensibility:LayerProperties.IsPopupEnabled>
+		<esriExtensibility:LayerProperties.IsVisibleInMapContents>true</esriExtensibility:LayerProperties.IsVisibleInMapContents>
+		<esriMapping:LayerExtensions.GeometryType>Point</esriMapping:LayerExtensions.GeometryType>
+		<esriMapping:LayerExtensions.GradientBrush>
+			<LinearGradientBrush>
+				<GradientStop Color="#FF090991" Offset="0" />
+				<GradientStop Color="#FFB6EDF0" Offset="1" />
+			</LinearGradientBrush>
+		</esriMapping:LayerExtensions.GradientBrush>
+		<esriMapping:LayerExtensions.Fields>
+			<esriMapping:FieldInfo Name="CatNo" DisplayName="CatNo" FieldType="DecimalNumber" AliasOnServer="CatNo" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="CommonName" DisplayName="CommonName" AliasOnServer="CommonName" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="FullTaxonN" DisplayName="FullTaxonN" AliasOnServer="FullTaxonN" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Collector" DisplayName="Collector" AliasOnServer="Collector" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Lat" DisplayName="Lat" FieldType="DecimalNumber" AliasOnServer="Lat" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Long" DisplayName="Long" FieldType="DecimalNumber" AliasOnServer="Long" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Elevation" DisplayName="Elevation" FieldType="DecimalNumber" AliasOnServer="Elevation" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="ElevationU" DisplayName="ElevationU" AliasOnServer="ElevationU" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="DataEntryD" DisplayName="DataEntryD" AliasOnServer="DataEntryD" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="ClimateCha" DisplayName="ClimateCha" AliasOnServer="ClimateCha" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Collection" DisplayName="Collection" AliasOnServer="Collection" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Locality" DisplayName="Locality" AliasOnServer="Locality" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Type" DisplayName="Type" AliasOnServer="Type" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Country" DisplayName="Country" AliasOnServer="Country" DomainSubtypeLookup="None" />
+		</esriMapping:LayerExtensions.Fields>
+		<esriMapping:LayerExtensions.DisplayField>CommonName</esriMapping:LayerExtensions.DisplayField>
+		<esriMapping:LayerExtensions.PopUpsOnClick>True</esriMapping:LayerExtensions.PopUpsOnClick>
+		<esri:GraphicsLayer.Clusterer>
+			<esri:FlareClusterer FlareBackground="#FFFFFF00" FlareForeground="#FF00B050">
+				<esri:FlareClusterer.Gradient>
+					<LinearGradientBrush>
+						<GradientStop Color="#7FFFFF00" Offset="0" />
+						<GradientStop Color="#7FFF0000" Offset="1" />
+					</LinearGradientBrush>
+				</esri:FlareClusterer.Gradient>
+			</esri:FlareClusterer>
+		</esri:GraphicsLayer.Clusterer>
+		<esri:GraphicsLayer.Renderer>
+			<esri:SimpleRenderer>
+				<esri:SimpleRenderer.Symbol>
+					<esriMapping:ImageFillSymbol Size="25.3333339691162" OriginX="0.5" OriginY="0.5" ImageData="iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABP1JREFUSIndlmtsFFUUx39z73RnmW1L09IHb0q1tYXGig8UiCBpLS3ig4oaBKvxFd/GB/GLiW+jNgK+UAgSbUzFhLQJPiJWwaS2VqnU8qg8tCkohQrtdttud3Z27vihZMu6i37zgyeZZObOOfc3/3PuORmd/8j0/zmo4smlc7MidwP5Es10lOsB9IhCOq4mUa4YQZN/jggPQonMJILJOiO6dJUUBKWgbzDMyU6/dshSxqt88XJPHMi4bk2ppdSnhwOSJ8v8XHTBAOlpQTyeCK4rsCOCkKUTCulYYYkuXUwzkqxpKlkpgeMI+gNJub8dS2btV6mVhWnBud/AvDjQ4uzQQyO2pPaFZqZMaj1nCgYCBdRsWsTMySFuv/kDNC3eJzt9NbvaU3MSps70UvLILb//IyQSSefZ9YvZ/ZuX2lYf5YsuZlJOW5zfhUW9NO4erxKCUkxnJGvCUEzAhg/voHrFN5jjugH4tuUqWn/1Ul+zgz17izhweAaTctoI2+kEg5mkjT8IgCfJxrJi6x998Oj4T/ebMaCTpz3s/G4uS0u7cRyDtR9Nobq0n66jM3EUHD2WAkBXdwlNu6dy5y2jICkVtiM8CUEarhOyZAzo0tn9NO/JoPwqg54TJXx2PAm9JRVHaXz9YwrFeRYDgQJqGwqYfX4gGielg1IYCUGAIYQbA7r4wkPU7VjAG++vwo5ovFQe4MaKQ8yY2sHi+SU8904RlQ9XkmIo7rv1yBhIOATDWmJFEaUle70x9SMnq53NL55k3ealfNyUyqY1B8l/9BL2vGTQ2DyVlRW92BHBtVfXI4QVjRMCApZIXKOQTXKKGeLvZnh6cBzBg8tOM6e4kcPrh5k5vYXiQmj9acmZja2YGCEchmztHKARaZpmOA4EMDwiKczzo2kWtfUFZGfkcn/1FixbIBP0kRAReixiCh4F9Q9Lr9eIVwRQnB/gu58yGRxawR+ndNLTIrR1VNDnN8ibNhDnr2kwrETMJ0RBR4ekR4jYgL2dZZyfu4/zZvhJ9YXJzzvB2/ObiEQ8bKwrpd+vs/DyvfGKNCduLQo6Fkaqs947jsHyZ4rJTS1icnqEVJ9L2aKvWbd5Oauu38O9Kxu5bc11HOmayfotC3hwdSvZWe2jigT4hFJWIhDgCkFUbsjK4ciIIFmHr04mAbB6/xU8/UUaVUtMOg5cxrZuD9ueLQCgbF5uFOQqmGbi9CUCFSY7tusSPfuBwQkANLzyPfs6p3DNm9PY+vl0ut7byYneLB7fOJWtdx2n7Mqfefej+Uh9rDVcF4bCsYWIgib6nFOBIXNSNJXHR4evJ8misvQTdvpuoKomj4b2hTx1fR+73vqSCRn7AbDCCxgcHOtP5UqGlUp8GAYs2fRjR05VyezRY9nTOzrHUlNOoWmwaF49f9RNRNf70GVs3xSdN0hP79icDIVMsr2u3XOWTxTU1ic3//JJ5vKqylmkp+3nollHaXgAfGZ31NlrnB06ZuUL2xgcSjujbiLbviyI2I7Wm1CRtb1mh7Xsibo595RXrbr0ykBmRtgwvY74YGu1i4ZEU7oGuuMILFtzrLCmQrZ0QiHh2LZ0HQVhNUd93+kd1+yXJkJ7PiEIgO011d3LHmt58VvfTYbwTbZAMnoZwLgz9wAhwDIgYCn86CoIgJJBQzkH0z3U9dW/9sO5QeCy/fUNwAaLf7dEPtY51v+z362/ANZF8oU/zRx2AAAAAElFTkSuQmCC" />
+				</esri:SimpleRenderer.Symbol>
+			</esri:SimpleRenderer>
+		</esri:GraphicsLayer.Renderer>
+	</esri:FeatureLayer>
+	<esri:FeatureLayer ID="d3bdcb890391429ea8ad827d677b82f7" Visible="False" RendererTakesPrecedence="True" Url="http://maps.rcmrd.org/arcgis/rest/services/AfricaContinent/Biodiversity_Species_Kenya_Museum/MapServer/2" Mode="OnDemand" OutFields="CatalogNum,CommonName,FullTaxonN,Collector,Lat,Long,MaxElevati,DataEntryD,Locality,Type,Country,EndddMonyy,ElevationU">
+		<esriMapping:LayerExtensions.LayerName>Africa.DBO.Fish</esriMapping:LayerExtensions.LayerName>
+		<esriMapping:LayerExtensions.DisplayUrl>http://maps.rcmrd.org/arcgis/rest/services/AfricaContinent/Biodiversity_Species_Kenya_Museum/MapServer/2</esriMapping:LayerExtensions.DisplayUrl>
+		<esriMapping:LayerExtensions.LayerInfos />
+		<esriExtensibility:LayerProperties.IsPopupEnabled>true</esriExtensibility:LayerProperties.IsPopupEnabled>
+		<esriExtensibility:LayerProperties.IsVisibleInMapContents>true</esriExtensibility:LayerProperties.IsVisibleInMapContents>
+		<esriMapping:LayerExtensions.GeometryType>Point</esriMapping:LayerExtensions.GeometryType>
+		<esriMapping:LayerExtensions.GradientBrush>
+			<LinearGradientBrush>
+				<GradientStop Color="#FF090991" Offset="0" />
+				<GradientStop Color="#FFB6EDF0" Offset="1" />
+			</LinearGradientBrush>
+		</esriMapping:LayerExtensions.GradientBrush>
+		<esriMapping:LayerExtensions.Fields>
+			<esriMapping:FieldInfo Name="CatalogNum" DisplayName="CatalogNum" FieldType="DecimalNumber" AliasOnServer="CatalogNum" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="CommonName" DisplayName="CommonName" AliasOnServer="CommonName" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="FullTaxonN" DisplayName="FullTaxonN" AliasOnServer="FullTaxonN" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="EndddMonyy" DisplayName="EndddMonyy" AliasOnServer="EndddMonyy" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Collector" DisplayName="Collector" AliasOnServer="Collector" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Lat" DisplayName="Lat" FieldType="DecimalNumber" AliasOnServer="Lat" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Long" DisplayName="Long" FieldType="DecimalNumber" AliasOnServer="Long" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="MaxElevati" DisplayName="MaxElevati" FieldType="DecimalNumber" AliasOnServer="MaxElevati" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="ElevationU" DisplayName="ElevationU" AliasOnServer="ElevationU" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="DataEntryD" DisplayName="DataEntryD" AliasOnServer="DataEntryD" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Locality" DisplayName="Locality" AliasOnServer="Locality" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Type" DisplayName="Type" AliasOnServer="Type" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Country" DisplayName="Country" AliasOnServer="Country" DomainSubtypeLookup="None" />
+		</esriMapping:LayerExtensions.Fields>
+		<esriMapping:LayerExtensions.DisplayField>CommonName</esriMapping:LayerExtensions.DisplayField>
+		<esriMapping:LayerExtensions.PopUpsOnClick>True</esriMapping:LayerExtensions.PopUpsOnClick>
+		<esri:GraphicsLayer.Clusterer>
+			<esri:FlareClusterer FlareBackground="#FF4040FF">
+				<esri:FlareClusterer.Gradient>
+					<LinearGradientBrush>
+						<GradientStop Color="#7FFFFF00" Offset="0" />
+						<GradientStop Color="#7FFF0000" Offset="1" />
+					</LinearGradientBrush>
+				</esri:FlareClusterer.Gradient>
+			</esri:FlareClusterer>
+		</esri:GraphicsLayer.Clusterer>
+		<esri:GraphicsLayer.Renderer>
+			<esri:SimpleRenderer>
+				<esri:SimpleRenderer.Symbol>
+					<esriMapping:ImageFillSymbol Size="26.6666660308838" OriginX="0.5" OriginY="0.5" ImageData="iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABCBJREFUSInFlluIVVUYx3/fWufsfWbOjOPMGBZYSJhTlo2moiZdLBgkqIg0Cwwfki7YSwiWD0ZIaYFkIfRgdlFCSOmli5K+RHjBAVFB85pO2TiOnnEuZ85177W/Hs7MOMM5pjBi/6dvsddav/39v2+tvWPcRsX+N5iqTlXVN13EdGAsShXgIVjAAFYEK6V1nojEVDWnSlahgBIAXWJIGeGKiJwGNohI/wiYqk5WpVVEEqC0Xwq43BWSzkS4EMSC7wlVnuD7gh8XVKE/q9WRarU1gjHgxWVi/RhLY73F84Qw1GZg4QhYGOrbsZgkDh/PserLPn5NRaOybJInHPr8DkRoLrOxGOhTqe6QuZ/0UBgdB4CzReXoqTzNTYlCGSxS/BNnC7cENKh0OmKg3iNhLtRO35dJtw4FgQNj8MtgQLaxzlZYMlIPVgnHcwrAq/datre567oROsWIeGUwBWus3BD20+p6LqUc8z/rZeWSWpZnlTnreyvODUIQIVEGA/WdU6YlhUUzPNbsrVy/lg+62bOmgQPvjqXKN0yZ5PHnWsu5CwEHjxX59ECBq2FprnOKMZRnJiI1ubyydJ7P4gU1PP9kFe2djpNtAR2piFQ6otoTpt8Xp6094HKX40RbwJkOR2PSMPluy+ypHtse8Gj9o8j7ewuEIRgj8TKYMYxJZyN2HCzQUGtY+kOWu+LCw3VCZ045kinViWNBBcMcHAvYscTy7Z4cDUlh1UyvVDNzjTEUWCO1mUzE/l7l2auOaUnhSEbpSGnFelTSou8yAKyb7zPzfo/z7SFGxJTDLNWZfGnj71uLrH0lyTOb+wFoiMG6BVU8MsXDiws96Yjz/4TsP15ky5lwRG3XPuHzckuS19f38OJcH9ByWMyK51wpPpJRJk4oWf1onbB1ZT2xmHChIyBfVB6blWT8uDyzm33WNcbY9XuGC1ccjbWGcWMNCz/q5lC/8oKCyLUOH1YzsXbgmDUlBOdKWa54rpqPt/Sx+XSpxXYuq2HXb2m++DnLh6+NofVojiXbsxVtdU5R1aE6DOtGhl7hnmTJqtVzPL7eneOXzms+DVq7oSXB3xdDXtraXxE0kACR4spgUaQuDEv32J6uiMXnAlJ90QjQcL2zO39dyLAEQCnPLHT0J3zqBsfLfszdcLObgUmli1hVz04YH5sxasIw+XEBGLJmCObFZedDTYnmpkRf7FT+5s/Wf+nORoNzDHXP8OvqK9+T9za9UZtu2dhXO9rv2sYFCZ6el3TWcq4S7C9VfevxWclNmW+qc7m8hsVANYwi1QgBBMSIYIwg1ooaA9YI1oDY0kMBMRaxRjygAKwogw1mp6onjWF5TdJMARJgY4BXikkMxAr0AyHQB/QCPQPjSFW7gcPANhG5WBE2ANwH7BudiZV1W39S/wUesa102E222gAAAABJRU5ErkJggg==" />
+				</esri:SimpleRenderer.Symbol>
+			</esri:SimpleRenderer>
+		</esri:GraphicsLayer.Renderer>
+	</esri:FeatureLayer>
+	<esri:FeatureLayer ID="8355e3a276fc4145872d38fc7514848d" Visible="False" RendererTakesPrecedence="True" Url="http://maps.rcmrd.org/arcgis/rest/services/AfricaContinent/Biodiversity_Species_Kenya_Museum/MapServer/5" Mode="OnDemand" OutFields="CatNo,FullTaxonN,Collector,Locality,Lat,Long,DataEntryD,Type,CommonName,Country,Collection,ElevationU">
+		<esriMapping:LayerExtensions.LayerName>Africa.DBO.Reptiles</esriMapping:LayerExtensions.LayerName>
+		<esriMapping:LayerExtensions.DisplayUrl>http://maps.rcmrd.org/arcgis/rest/services/AfricaContinent/Biodiversity_Species_Kenya_Museum/MapServer/5</esriMapping:LayerExtensions.DisplayUrl>
+		<esriMapping:LayerExtensions.LayerInfos />
+		<esriExtensibility:LayerProperties.IsPopupEnabled>true</esriExtensibility:LayerProperties.IsPopupEnabled>
+		<esriExtensibility:LayerProperties.IsVisibleInMapContents>true</esriExtensibility:LayerProperties.IsVisibleInMapContents>
+		<esriMapping:LayerExtensions.GeometryType>Point</esriMapping:LayerExtensions.GeometryType>
+		<esriMapping:LayerExtensions.GradientBrush>
+			<LinearGradientBrush>
+				<GradientStop Color="#FF090991" Offset="0" />
+				<GradientStop Color="#FFB6EDF0" Offset="1" />
+			</LinearGradientBrush>
+		</esriMapping:LayerExtensions.GradientBrush>
+		<esriMapping:LayerExtensions.Fields>
+			<esriMapping:FieldInfo Name="CatNo" DisplayName="CatNo" FieldType="DecimalNumber" AliasOnServer="CatNo" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="FullTaxonN" DisplayName="FullTaxonN" AliasOnServer="FullTaxonN" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Collection" DisplayName="Collection" AliasOnServer="Collection" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Collector" DisplayName="Collector" AliasOnServer="Collector" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Locality" DisplayName="Locality" AliasOnServer="Locality" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Lat" DisplayName="Lat" FieldType="DecimalNumber" AliasOnServer="Lat" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Long" DisplayName="Long" FieldType="DecimalNumber" AliasOnServer="Long" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="ElevationU" DisplayName="ElevationU" AliasOnServer="ElevationU" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="DataEntryD" DisplayName="DataEntryD" AliasOnServer="DataEntryD" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Type" DisplayName="Type" AliasOnServer="Type" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="CommonName" DisplayName="CommonName" AliasOnServer="CommonName" DomainSubtypeLookup="None" />
+			<esriMapping:FieldInfo Name="Country" DisplayName="Country" AliasOnServer="Country" DomainSubtypeLookup="None" />
+		</esriMapping:LayerExtensions.Fields>
+		<esriMapping:LayerExtensions.DisplayField>CommonName</esriMapping:LayerExtensions.DisplayField>
+		<esriMapping:LayerExtensions.PopUpsOnClick>True</esriMapping:LayerExtensions.PopUpsOnClick>
+		<esri:GraphicsLayer.Clusterer>
+			<esri:FlareClusterer>
+				<esri:FlareClusterer.Gradient>
+					<LinearGradientBrush>
+						<GradientStop Color="#7FFFFF00" Offset="0" />
+						<GradientStop Color="#7FFF0000" Offset="1" />
+					</LinearGradientBrush>
+				</esri:FlareClusterer.Gradient>
+			</esri:FlareClusterer>
+		</esri:GraphicsLayer.Clusterer>
+		<esri:GraphicsLayer.Renderer>
+			<esri:SimpleRenderer>
+				<esri:SimpleRenderer.Symbol>
+					<esriMapping:ImageFillSymbol Size="33.3333320617676" OriginX="0.5" OriginY="0.5" ImageData="iVBORw0KGgoAAAANSUhEUgAAACIAAAAYCAYAAACfpi8JAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAABEFJREFUSInNll1IVGkYx3+v58sRtUVHHUEyNynYLkqzpHUhoUCD9qKoCyPCPnDpqrvqIqQrC0LavVyWom6ibkq6WihCcAkkkuouFXU2c1DhkN/zOs68e/Fo4zhzcpcNdh945wznPOc9v/f//N/nHJv/Sdj/NcBaZIEYz/serZuM55USieQTDodVSUk9eXmSm0hYpFL5LC/bgMF1VwADJHEcjW2vkEo5q+dS64ZB6wTv3/+J73crrf8IBDHQgda/0tUVp7bWU5alsCzIzwfLkiSlZBgjA+SoFCST6f+pFCQSEI/D3BxMT8PgIPT21uN5Pxj4VsFcbkVaWn5iyxa4ciVf5eX9G6WD4/p1qK4O43lNaP17bhCtazhxAjaDmJ0F1xWl/mls3QqNjZr+/u+AAJDR0WIikS9PdOeOgOzcCUeOSBk2hjEwMgKRSGZZ16Kmxpj+/pr1pz6DGPCIRq0vrnJmBsbGBGBxMTfEWt6bN+KJS5egoCCTMxy2FFTlBAFc+XWDQV69gvZ2WemTJ3DzJrS1QXW1XF9ZgZcv4cULOH8ePn2Cnh44dSpjGlVWZgOVQSBijA30GbF9O1y7Bt3dcPo0DAzAo0cQCkEsBrt2wcQEHD8O9+7BmTNQUpI9T2GhorJyC7FYThDRWevsG4eH4fFjKCuDjo407MOHsHevGDAUAt+H3l7JcV2YmhIV9++XnLVwHPD95SBFpCkkEuvOGJG2qEhq7XmZgDduZBuxqUkg2tthfl7mGByE0VE4eFByVlbSz8sBEgekKa1Fby9s2wYLC3D/vqy4tBTOnROAjRCQhq2okBGPw+7dcPt2GmRxEbROrr/tM4gCbWprE6vtWaKnB6JRuHgRzp6V3XD5MjQ3QzgsZm1ogD17BMD3YWgIWltlm1dUwPi4lK2tLf3UpSWA3CAA1NTMkUql3dXcDPv2QVWVeKerCy5cEJVsW3pJUZF4oq4ODh2CyUlR0LLEtBvLCRjfNwoyzJgJUlw8RTKZBjl2LH3t7VsxZl0ddHaKOg0NsvrWVsmZmoLXr+HDBzhwAJ4/h5YWgV4XanjYAH4wiONYLGeYeXUJRuTcsQMePBAVurqyG1p5OVy9KjDT01BYmAVBMgnPnuUZmAwGSSRCxOPZIEqJ0Z4+hZMnpeZBXdV1obFR/BIOZ19fWJApYTwYJB53mZnJ/QCAo0c3fyGC5OSCANnSEtFgkNlZn4GBcg4fzj3R1/g0WFUEzxtb3zwzQfr6fqOvr5tbt6QE9fWyBQsKpNbGSMPTWo6OI30lFBJI25bd4jhyznVFgcVF6ScfP8LduwZQaD0UrAj8YjzvGxWJ/MjIiM27dz62XQZUMD/vsvYagCSFhUs4ThKwSCRstHZZWPCIxTLfmpWVy8inosL3HWAW+FnBRCCIgiRadxKNdhLNKOHfDgMWEEKOWsViOdyfHV/9K15Jx5zfNHFD/AWscYLtpL2bJgAAAABJRU5ErkJggg==" />
+				</esri:SimpleRenderer.Symbol>
+			</esri:SimpleRenderer>
+		</esri:GraphicsLayer.Renderer>
+	</esri:FeatureLayer>
+	<esri:GraphicsLayer ID="f93052424d94458cab97b123dd97d3a5" RendererTakesPrecedence="True">
+		<esriMapping:LayerExtensions.LayerInfos />
+		<esriExtensibility:LayerProperties.IsPopupEnabled>false</esriExtensibility:LayerProperties.IsPopupEnabled>
+		<esriExtensibility:LayerProperties.IsVisibleInMapContents>false</esriExtensibility:LayerProperties.IsVisibleInMapContents>
+		<esriMapping:LayerExtensions.Fields />
+		<esriMapping:LayerExtensions.PopUpsOnClick>True</esriMapping:LayerExtensions.PopUpsOnClick>
+		<esri:GraphicsLayer.Renderer>
+			<esri:SimpleRenderer>
+				<esri:SimpleRenderer.Symbol>
+					<esriFSSymbols:SimpleMarkerSymbol>
+						<esriMapping:SymbolExtensions.Json>{"type":"esriSMS","style":"esriSMSCircle","color":[255,255,255,153],"size":15.75,"angle":0,"xoffset":0,"yoffset":0,"outline":{"color":[255,0,0,255],"width":1.5}}</esriMapping:SymbolExtensions.Json>
+					</esriFSSymbols:SimpleMarkerSymbol>
+				</esri:SimpleRenderer.Symbol>
+			</esri:SimpleRenderer>
+		</esri:GraphicsLayer.Renderer>
+	</esri:GraphicsLayer>
+	<esri:GraphicsLayer ID="64b3f826a3ca44d7b49aae070034f527" RendererTakesPrecedence="True">
+		<esriMapping:LayerExtensions.LayerInfos />
+		<esriExtensibility:LayerProperties.IsPopupEnabled>false</esriExtensibility:LayerProperties.IsPopupEnabled>
+		<esriExtensibility:LayerProperties.IsVisibleInMapContents>false</esriExtensibility:LayerProperties.IsVisibleInMapContents>
+		<esriMapping:LayerExtensions.Fields />
+		<esriMapping:LayerExtensions.PopUpsOnClick>True</esriMapping:LayerExtensions.PopUpsOnClick>
+		<esri:GraphicsLayer.Renderer>
+			<esri:SimpleRenderer>
+				<esri:SimpleRenderer.Symbol>
+					<esriFSSymbols:SimpleMarkerSymbol>
+						<esriMapping:SymbolExtensions.Json>{"type":"esriSMS","style":"esriSMSCircle","color":[255,255,255,153],"size":15.75,"angle":0,"xoffset":0,"yoffset":0,"outline":{"color":[255,0,0,255],"width":1.5}}</esriMapping:SymbolExtensions.Json>
+					</esriFSSymbols:SimpleMarkerSymbol>
+				</esri:SimpleRenderer.Symbol>
+			</esri:SimpleRenderer>
+		</esri:GraphicsLayer.Renderer>
+	</esri:GraphicsLayer>
+</esri:Map>

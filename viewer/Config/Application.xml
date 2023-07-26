@@ -1,0 +1,25 @@
+﻿<ViewerApplication LogoFilePath="Images/rcmrd.png" LayoutFilePath="Config/Layouts/BlackBox.xaml">
+  <Version>3.3.0.106</Version>
+  <HelpLinks />
+  <Extensions>
+    <Extension Url="Extensions/MeasureTool.AddIns.xap" />
+    <Extension Url="Extensions/QueryRelatedRecords.AddIns.xap" />
+    <Extension Url="Extensions/Esri.ArcGIS.Client.Application.AddIns.ExtentQueryStringBehavior.xap" />
+    <Extension Url="Extensions/Esri.ArcGIS.Client.Application.AddIns.CenterQueryStringBehavior.xap" />
+    <Extension Url="Extensions/Esri.ArcGIS.Client.Application.AddIns.WebMapQueryStringBehavior.xap" />
+    <Extension Url="Extensions/Esri.ArcGIS.Client.Application.AddIns.ScaleQueryStringBehavior.xap" />
+    <Extension Url="Extensions/Esri.ArcGIS.Client.Application.AddIns.ScaleLevelQueryStringBehavior.xap" />
+  </Extensions>
+  <ArcGISOnlineSharing>http://www.arcgis.com/sharing/</ArcGISOnlineSharing>
+  <ArcGISOnlineSharingSecure>https://www.arcgis.com/sharing/</ArcGISOnlineSharingSecure>
+  <ArcGISOnlineProxy></ArcGISOnlineProxy>
+  <GeometryService>http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer</GeometryService>
+  <Proxy></Proxy>
+  <BingMapsAppId></BingMapsAppId>
+  <PortalAppId></PortalAppId>
+  <WebMap>
+    <ID></ID>
+    <Title></Title>
+    <Linked></Linked>
+  </WebMap>
+</ViewerApplication>
